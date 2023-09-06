@@ -29,6 +29,7 @@
     "react/jsx-closing-bracket-location": ["error", "line-aligned"],
     "comma-dangle": ["error", "always-multiline"],
     "@typescript-eslint/comma-dangle": ["error", "always-multiline"],
-    "linebreak-style": ["error", "unix"]
+    "linebreak-style": ["error", "unix"],
+    "@typescript-eslint/no-inferrable-types": "off"
   }
 }
