@@ -1,6 +1,9 @@
-import type { FC, ReactNode } from 'react'
 import Link from 'next/link'
 import { HomeIcon } from '@primer/octicons-react'
+
+import type { FC, ReactNode } from 'react'
+
+import { ActiveLink } from '..'
 
 interface NavItemsType {
   path: string
@@ -23,9 +26,7 @@ export const Navbar: FC = (): ReactNode => {
 
       <div className="flex flex-1" />
       {navItems.map(({ path, display }: NavItemsType) => (
-        <Link key={path} className="mr-2" href={path}>
-          {display}
-        </Link>
+        <ActiveLink key={path} path={path} display={display} />
       ))}
     </nav>
   )
