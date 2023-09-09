@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const AboutPage: FC = (): ReactNode => {
   return (
     <main>
-      <h1>About</h1>
+      <h1>About Component</h1>
     </main>
   )
 }
